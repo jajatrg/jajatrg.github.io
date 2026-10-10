@@ -1,115 +1,42 @@
-# Jacqueline Trang
+# Jacqueline Trang – Portfolio
 
-Business Intelligence & Data Analytics
+Personal portfolio (Business Intelligence & Data Analytics), built with
+[Jekyll](https://jekyllrb.com/) and the
+[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, hosted on GitHub Pages.
 
-Bienvenue sur mon portfolio GitHub.
+Live site: https://jajatrg.github.io
 
-Je suis actuellement stagiaire Business Analyst chez Kenvue, où je développe des tableaux de bord Power BI, automatise des reportings et réalise des analyses de données commerciales à l'aide de SQL, Excel et Power BI. Je suis à la recherche d'un stage de 6 mois en Data Analytics à partir de janvier 2027. 【1-520547】
+## Structure
 
+| Path | Content |
+|---|---|
+| `_config.yml` | Site settings (title, author, links, theme) |
+| `index.md` | Homepage |
+| `_pages/` | Projects, Experience, About and 404 pages |
+| `_projects/` | One Markdown file per project |
+| `_data/navigation.yml` | Top menu |
+| `assets/images/` | Images (profile photo, project visuals) |
+
+## Add a project
+
+Create a new file in `_projects/`, for example `_projects/my-project.md`:
+
+```markdown
+---
+title: "Project title"
+excerpt: "One-sentence summary shown in the project list."
+order: 6          # position in the list
+date: 2026-11-01
 ---
 
-## À propos
+Project description in Markdown…
+```
 
-Passionnée par la Business Intelligence, l'analyse de données et la visualisation, j'aime transformer les données en indicateurs décisionnels pour accompagner la performance commerciale.
+## Run locally
 
-Formation :
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-- Programme Grande École, emlyon business school (2025-2027) 【1-520547】
-- Magistère d'Économie, Université Paris 1 Panthéon-Sorbonne 【1-520547】
-- Économie, Statistiques, Économétrie, Machine Learning et Analyse de données 【1-520547】
-
----
-
-## Compétences
-
-### Business Intelligence
-- Power BI
-- Power Query
-- KPI Tracking
-- Dashboarding
-- Data Visualization
-
-### Data Analytics
-- SQL (Snowflake)
-- Data Cleaning
-- ETL
-- Marketing Analytics
-- Cohort Analysis
-
-### Outils
-- Excel
-- PowerPoint
-- Figma
-- Microsoft Office
-- GitHub
-
-### IA & Productivité
-- Microsoft Copilot
-- ChatGPT
-- Claude
-
----
-
-## Expérience professionnelle
-
-### Kenvue | Business Analyst Intern
-*Juillet 2026 - Décembre 2026* 【1-520547】
-
-- Développement de dashboards Power BI pour le suivi de la performance commerciale. 【1-520547】
-- Extraction et transformation de données SQL, Snowflake. 【1-520547】
-- Analyses marketing et cohortes sur plus de 1 500 pharmacies. 【1-520547】
-
----
-
-## Projets
-
-### 📊 Dashboard Power BI - Performance Commerciale
-
-Analyse des ventes et suivi des KPI.
-
-**Technologies :**
-- Power BI
-- DAX
-- Power Query
-
----
-
-### 🗄️ Analyse SQL des ventes
-
-Exploration des données commerciales à l'aide de requêtes SQL.
-
-**Technologies :**
-- SQL
-- Snowflake
-
----
-
-### 🐍 Data Analysis
-
-Analyse exploratoire et visualisation de données.
-
-**Technologies :**
-- SQL
-- R
-
----
-
-## Langues
-
-- Français : Natif 【1-520547】
-- Chinois : Natif 【1-520547】
-- Anglais : C1 (TOEIC 935/990) 【1-520547】
-
----
-
-## Contact
-
-📧 jacqueline.trang@edu.em-lyon.com
-
-🔗 LinkedIn : https://www.linkedin.com/in/jacqueline-trang-bb4aab2b0
-
-💻 GitHub : https://github.com/jajatrg
-
----
-
-Merci pour votre visite.# Jacqueline Trang
+Then open http://localhost:4000.
